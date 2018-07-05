@@ -1,0 +1,16 @@
+D:\MiMFa\My Product\Software\MiMFa Framework\MiMFa Framework\MiMFa Framework 4.6\AI\bin\Debug\MiMFa Framework.AI.dll
+D:\MiMFa\My Product\Software\MiMFa Framework\MiMFa Framework\MiMFa Framework 4.6\AI\bin\Debug\MiMFa Framework.AI.pdb
+D:\MiMFa\My Product\Software\MiMFa Framework\MiMFa Framework\MiMFa Framework 4.6\AI\bin\Debug\MiMFa Framework.dll
+D:\MiMFa\My Product\Software\MiMFa Framework\MiMFa Framework\MiMFa Framework 4.6\AI\bin\Debug\System.Data.SQLite.dll
+D:\MiMFa\My Product\Software\MiMFa Framework\MiMFa Framework\MiMFa Framework 4.6\AI\bin\Debug\MiMFa Framework.pdb
+D:\MiMFa\My Product\Software\MiMFa Framework\MiMFa Framework\MiMFa Framework 4.6\AI\obj\Debug\MiMFa Framework.AI.csprojResolveAssemblyReference.cache
+D:\MiMFa\My Product\Software\MiMFa Framework\MiMFa Framework\MiMFa Framework 4.6\AI\obj\Debug\MiMFa Framework.AI.dll
+D:\MiMFa\My Product\Software\MiMFa Framework\MiMFa Framework\MiMFa Framework 4.6\AI\obj\Debug\MiMFa Framework.AI.pdb
+D:\MiMFa\My Company\Product\Software\MiMFa Framework\MiMFa Framework\MiMFa Framework 4.6\AI\bin\Debug\MiMFa Framework.AI.dll
+D:\MiMFa\My Company\Product\Software\MiMFa Framework\MiMFa Framework\MiMFa Framework 4.6\AI\bin\Debug\MiMFa Framework.AI.pdb
+D:\MiMFa\My Company\Product\Software\MiMFa Framework\MiMFa Framework\MiMFa Framework 4.6\AI\bin\Debug\MiMFa Framework.dll
+D:\MiMFa\My Company\Product\Software\MiMFa Framework\MiMFa Framework\MiMFa Framework 4.6\AI\bin\Debug\System.Data.SQLite.dll
+D:\MiMFa\My Company\Product\Software\MiMFa Framework\MiMFa Framework\MiMFa Framework 4.6\AI\bin\Debug\MiMFa Framework.pdb
+D:\MiMFa\My Company\Product\Software\MiMFa Framework\MiMFa Framework\MiMFa Framework 4.6\AI\obj\Debug\MiMFa Framework.AI.csprojResolveAssemblyReference.cache
+D:\MiMFa\My Company\Product\Software\MiMFa Framework\MiMFa Framework\MiMFa Framework 4.6\AI\obj\Debug\MiMFa Framework.AI.dll
+D:\MiMFa\My Company\Product\Software\MiMFa Framework\MiMFa Framework\MiMFa Framework 4.6\AI\obj\Debug\MiMFa Framework.AI.pdb
