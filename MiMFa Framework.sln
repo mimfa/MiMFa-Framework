@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiMFa Framework", "Core\MiMFa Framework.csproj", "{ADC72CD2-885E-442A-983E-0BA87B7234EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiMFa Framework.Exclusive", "Exclusive\MiMFa Framework.Exclusive.csproj", "{7D8B3A64-3768-4150-B2C1-5A9B405B8C80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiMFa Framework.Windows", "Windows\MiMFa Framework.Windows.csproj", "{EF653621-5421-48EA-BE2F-D9194FF71C08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiMFa Framework.AI", "AI\MiMFa Framework.AI.csproj", "{3B16B0C9-D89A-4067-A4E0-0F8DF29DA377}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiMFa CommandLanguageConsole", "MCL Console\MiMFa CommandLanguageConsole.csproj", "{DEF5BB13-46A0-42AF-B6EC-5F528E36426C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiMFa Framework.WBACK", "WBACK\MiMFa Framework.WBACK.csproj", "{D5BDBDF4-0882-493C-9C99-C8D555DF9CFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiMFa Framework.Windows.Report", "Report\MiMFa Framework.Windows.Report.csproj", "{C58D2073-309F-4F88-A001-6C1FA89E58CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADC72CD2-885E-442A-983E-0BA87B7234EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC72CD2-885E-442A-983E-0BA87B7234EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC72CD2-885E-442A-983E-0BA87B7234EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC72CD2-885E-442A-983E-0BA87B7234EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D8B3A64-3768-4150-B2C1-5A9B405B8C80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D8B3A64-3768-4150-B2C1-5A9B405B8C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D8B3A64-3768-4150-B2C1-5A9B405B8C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D8B3A64-3768-4150-B2C1-5A9B405B8C80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF653621-5421-48EA-BE2F-D9194FF71C08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF653621-5421-48EA-BE2F-D9194FF71C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF653621-5421-48EA-BE2F-D9194FF71C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF653621-5421-48EA-BE2F-D9194FF71C08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B16B0C9-D89A-4067-A4E0-0F8DF29DA377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B16B0C9-D89A-4067-A4E0-0F8DF29DA377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B16B0C9-D89A-4067-A4E0-0F8DF29DA377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B16B0C9-D89A-4067-A4E0-0F8DF29DA377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEF5BB13-46A0-42AF-B6EC-5F528E36426C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF5BB13-46A0-42AF-B6EC-5F528E36426C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEF5BB13-46A0-42AF-B6EC-5F528E36426C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEF5BB13-46A0-42AF-B6EC-5F528E36426C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5BDBDF4-0882-493C-9C99-C8D555DF9CFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5BDBDF4-0882-493C-9C99-C8D555DF9CFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5BDBDF4-0882-493C-9C99-C8D555DF9CFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5BDBDF4-0882-493C-9C99-C8D555DF9CFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C58D2073-309F-4F88-A001-6C1FA89E58CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C58D2073-309F-4F88-A001-6C1FA89E58CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C58D2073-309F-4F88-A001-6C1FA89E58CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C58D2073-309F-4F88-A001-6C1FA89E58CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
