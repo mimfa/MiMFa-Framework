@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C58D2073-309F-4F88-A001-6C1FA89E58CC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Report</RootNamespace>
+    <AssemblyName>MiMFa Framework.Windows.Report</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Component\WinForm\Browser\MRLReportViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\WinForm\Browser\MRLReportViewer.Designer.cs">
+      <DependentUpon>MRLReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\WinForm\Package\Reports\Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\WinForm\Package\Reports\Editor.Designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\WinForm\Package\Reports\ReportSystem.cs" />
+    <Compile Include="Component\WinForm\Package\Reports\Viewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\WinForm\Package\Reports\Viewer.Designer.cs">
+      <DependentUpon>Viewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Component\WinForm\Browser\MRLReportViewer.resx">
+      <DependentUpon>MRLReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\WinForm\Package\Reports\Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\WinForm\Package\Reports\Viewer.resx">
+      <DependentUpon>Viewer.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\MiMFa Framework.csproj">
+      <Project>{adc72cd2-885e-442a-983e-0ba87b7234ef}</Project>
+      <Name>MiMFa Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WBACK\MiMFa Framework.WBACK.csproj">
+      <Project>{d5bdbdf4-0882-493c-9c99-c8d555df9cfb}</Project>
+      <Name>MiMFa Framework.WBACK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Windows\MiMFa Framework.Windows.csproj">
+      <Project>{ef653621-5421-48ea-be2f-d9194ff71c08}</Project>
+      <Name>MiMFa Framework.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
