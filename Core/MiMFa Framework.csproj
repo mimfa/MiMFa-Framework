@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ADC72CD2-885E-442A-983E-0BA87B7234EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MiMFa_Framework</RootNamespace>
+    <AssemblyName>MiMFa Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MiMFa Framework Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Devart.Data, Version=5.0.1350.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Devart.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Devart.Data.SQLite, Version=5.3.558.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Devart.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>C:\Users\MiMFa-NoteBook\Documents\PDFToText_bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.98.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.102.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.98.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Component\WinForm\ButtonPack\ButtonAction.cs" />
+    <Compile Include="Configuration\Repository.cs" />
+    <Compile Include="Configuration\Sub\Adderss.cs" />
+    <Compile Include="Exclusive\Accessibility\PropertyToContentInjection.cs" />
+    <Compile Include="Exclusive\Animate\FormMove.cs" />
+    <Compile Include="Exclusive\Attribute\DefaultMethodAttribute.cs" />
+    <Compile Include="Exclusive\Collection\CharBank.cs" />
+    <Compile Include="Exclusive\Collection\EnumsBank.cs" />
+    <Compile Include="Exclusive\Collection\Instance\ApplicationDirectories.cs" />
+    <Compile Include="Exclusive\Collection\Instance\Book.cs" />
+    <Compile Include="Exclusive\Collection\Instance\Dynasty.cs" />
+    <Compile Include="Exclusive\Collection\Instance\Instance.cs" />
+    <Compile Include="Exclusive\Collection\Instance\Person.cs" />
+    <Compile Include="Configuration\Default.cs" />
+    <Compile Include="Exclusive\Language\LanguageReader.cs" />
+    <Compile Include="Exclusive\Language\Sub\Address.cs" />
+    <Compile Include="Exclusive\Language\Translator.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\DataBase\DataBase.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\DataBase\MiMFa SQLite.cs" />
+    <Compile Include="Exclusive\DateAndTime\Date.cs" />
+    <Compile Include="Exclusive\DateAndTime\DateTime.cs" />
+    <Compile Include="Exclusive\DateAndTime\IntervalDate.cs" />
+    <Compile Include="Exclusive\DateAndTime\IntervalMeetTime.cs" />
+    <Compile Include="Exclusive\DateAndTime\IntervalTime.cs" />
+    <Compile Include="Exclusive\DateAndTime\Time.cs" />
+    <Compile Include="Exclusive\Display\DisplayHTML.cs" />
+    <Compile Include="Exclusive\Display\DisplayStringBase.cs" />
+    <Compile Include="Exclusive\Display\DisplayText.cs" />
+    <Compile Include="Exclusive\Display\DisplayType.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Report Language\Sub\Report.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Report Language\Sub\ReportStyle.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Sub\Address.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Sub\MCLTools.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Sub\Options.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Sub\Type\Accessibility.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Sub\Type\EventHandlers.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Sub\Type\EventPack.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Sub\Type\Function.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Sub\Type\Variable.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\ProgramingTechnology.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\Tools\Pickup\CollectionPickup.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\Tools\Pickup\CommentPickup.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\Tools\Pickup\ParenthesisPickup.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\Tools\Pickup\Pickup.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\Tools\Pickup\StringPickup.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\Tools\Pickup\StrongCollectionPickup.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\Tools\Pickup\StrongParenthesisPickup.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\Tools\Pickup\StrongStringPickup.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\Tools\ProviderTools.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\Tools\Sub\ActionEventHandler.cs" />
+    <Compile Include="Exclusive\Security\Cryptography.cs" />
+    <Compile Include="Exclusive\Security\Windows.cs" />
+    <Compile Include="Framework\1-User Interface Layer\APIBase.cs" />
+    <Compile Include="Framework\2-Calculations Logic Layer\APIBase.cs" />
+    <Compile Include="Framework\3-Model Format Layer\APIBase.cs" />
+    <Compile Include="Framework\3-Model Format Layer\Execute\Archive.cs" />
+    <Compile Include="Framework\3-Model Format Layer\Execute\Exacute.cs" />
+    <Compile Include="Framework\3-Model Format Layer\Execute\HeavyData.cs" />
+    <Compile Include="Framework\3-Model Format Layer\Execute\IExecute.cs" />
+    <Compile Include="Framework\3-Model Format Layer\Execute\ReportStyles.cs" />
+    <Compile Include="Framework\3-Model Format Layer\Model\HeavyData.cs" />
+    <Compile Include="Framework\Infrastructure\APIBase.cs" />
+    <Compile Include="General\ButtonAction.cs" />
+    <Compile Include="General\Compute.cs" />
+    <Compile Include="General\Convert.cs" />
+    <Compile Include="General\GetDetail.cs" />
+    <Compile Include="General\Math.cs" />
+    <Compile Include="General\Path.cs" />
+    <Compile Include="General\Process.cs" />
+    <Compile Include="General\QueryToDataSet.cs" />
+    <Compile Include="General\ScreenCapturer.cs" />
+    <Compile Include="General\Template.cs" />
+    <Compile Include="General\Transmission.cs" />
+    <Compile Include="General\UnicCode.cs" />
+    <Compile Include="Model\Data\Table.cs" />
+    <Compile Include="Model\ObjectDetail.cs" />
+    <Compile Include="Model\Data\Matrix.cs" />
+    <Compile Include="Model\Peculiarities\Balance.cs" />
+    <Compile Include="Model\Data\Collection.cs" />
+    <Compile Include="Model\Data\Dictionary.cs" />
+    <Compile Include="Model\Empty.cs" />
+    <Compile Include="Model\Data\KeyValuePair.cs" />
+    <Compile Include="Model\Data\Keywords.cs" />
+    <Compile Include="Model\Data\List.cs" />
+    <Compile Include="Model\Peculiarities\Location.cs" />
+    <Compile Include="Model\Percent.cs" />
+    <Compile Include="Model\Data\Queue.cs" />
+    <Compile Include="Model\Data\Stack.cs" />
+    <Compile Include="Model\Data\XMLElement.cs" />
+    <Compile Include="Network\FTP\DataTransit.cs" />
+    <Compile Include="Network\Hybrid\DataTransit.cs" />
+    <Compile Include="Network\Internet.cs" />
+    <Compile Include="Network\Net.cs" />
+    <Compile Include="Network\Sub\Packet.cs" />
+    <Compile Include="Network\Sub\Sub.cs" />
+    <Compile Include="Network\TCP\DataTransit.cs" />
+    <Compile Include="Network\TCP\Receiver.cs" />
+    <Compile Include="Network\TCP\Sender.cs" />
+    <Compile Include="Network\UDP\Receiver.cs" />
+    <Compile Include="Network\UDP\Sender.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service\Bitmap.cs" />
+    <Compile Include="Service\Collection.cs" />
+    <Compile Include="Service\Control.cs" />
+    <Compile Include="Service\IO.cs" />
+    <Compile Include="Service\MessageBox.cs" />
+    <Compile Include="Service\Control\MessageBoxMode\FormMode\Circle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Service\Control\MessageBoxMode\FormMode\Circle.Designer.cs">
+      <DependentUpon>Circle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service\String.cs" />
+    <Compile Include="Service\Web.cs" />
+    <Compile Include="Sub\Config.cs" />
+    <Compile Include="Sub\Statement.cs" />
+    <Compile Include="WPF\Service\RichTextBox.cs" />
+    <Compile Include="WPF\Service\WebBrowser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="General\packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Service\Control\MessageBoxMode\FormMode\Circle.resx">
+      <DependentUpon>Circle.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MiMFa Framework Icon.ico" />
+    <Content Include="Resources\14_Add-128.png" />
+    <Content Include="Resources\4.png" />
+    <Content Include="Resources\a1.png" />
+    <Content Include="Resources\add.png" />
+    <Content Include="Resources\Adobe Reader.png" />
+    <Content Include="Resources\All Browser.png" />
+    <Content Include="Resources\Attach.png" />
+    <Content Include="Resources\Back.png" />
+    <Content Include="Resources\BackD.png" />
+    <Content Include="Resources\BackRed.png" />
+    <Content Include="Resources\BackV.png" />
+    <Content Include="Resources\BackV2.png" />
+    <Content Include="Resources\BackV3.png" />
+    <Content Include="Resources\Bexit.png" />
+    <Content Include="Resources\BMinimize.png" />
+    <Content Include="Resources\BottomBorder - .png" />
+    <None Include="Resources\Yellow Star.png" />
+    <None Include="Resources\BowClip.png" />
+    <Content Include="Resources\Browser Select.bmp" />
+    <Content Include="Resources\Browser Select.png" />
+    <Content Include="Resources\Browser Select1.png" />
+    <Content Include="Resources\Browser UnSelect.png" />
+    <Content Include="Resources\Browser UnSelect1.png" />
+    <Content Include="Resources\Browser UnSelect2.png" />
+    <Content Include="Resources\Browser.png" />
+    <Content Include="Resources\BWindowsState.png" />
+    <Content Include="Resources\BWindowsState1.png" />
+    <Content Include="Resources\close.png" />
+    <None Include="Resources\Crack.png" />
+    <Content Include="Resources\del.png" />
+    <Content Include="Resources\exit.png" />
+    <Content Include="Resources\Export.png" />
+    <Content Include="Resources\favorite.png" />
+    <None Include="Resources\Green Star.png" />
+    <None Include="Resources\Gold Star.png" />
+    <Content Include="Resources\HideControl - Bottom Hover.png" />
+    <Content Include="Resources\HideControl - up - Bottom.png" />
+    <Content Include="Resources\HideControl - up.png" />
+    <Content Include="Resources\HideControl - upHover.png" />
+    <Content Include="Resources\HideControl Left.png" />
+    <Content Include="Resources\HideControl.png" />
+    <Content Include="Resources\HideControlHover Left.png" />
+    <Content Include="Resources\HideControlHover.png" />
+    <Content Include="Resources\Home.png" />
+    <Content Include="Resources\HomeOrig.png" />
+    <Content Include="Resources\Horizental Shadow.png" />
+    <None Include="Resources\Ice Star.png" />
+    <Content Include="Resources\iconmonstr-note-17-icon-256.png" />
+    <Content Include="Resources\icon_60089.png" />
+    <Content Include="Resources\Import.png" />
+    <Content Include="Resources\ir.png" />
+    <None Include="Resources\Lavender Star.png" />
+    <Content Include="Resources\LeftBorder - .png" />
+    <Content Include="Resources\loading.gif" />
+    <Content Include="Resources\Microsoft Excel.png" />
+    <Content Include="Resources\Microsoft Word.png" />
+    <Content Include="Resources\MiMFa Add Image.png" />
+    <Content Include="Resources\MiMFa Add.png" />
+    <Content Include="Resources\MiMFa Add1.png" />
+    <Content Include="Resources\MiMFa Drawing.png" />
+    <Content Include="Resources\MiMFa Export.png" />
+    <Content Include="Resources\MiMFa False.png" />
+    <Content Include="Resources\MiMFa Go Left.png" />
+    <Content Include="Resources\MiMFa Go Right.png" />
+    <Content Include="Resources\MiMFa Import.png" />
+    <Content Include="Resources\MIMFA LOGO.png" />
+    <Content Include="Resources\MiMFa Option.png" />
+    <Content Include="Resources\MiMFa Page Setup.png" />
+    <Content Include="Resources\MiMFa Print Preview.png" />
+    <Content Include="Resources\MiMFa Print.png" />
+    <Content Include="Resources\MiMFa Refresh1.png" />
+    <Content Include="Resources\MiMFa Remove Image.png" />
+    <Content Include="Resources\MiMFa Report Package.png" />
+    <Content Include="Resources\MiMFa Report Package1.png" />
+    <Content Include="Resources\MiMFa Report.ico" />
+    <Content Include="Resources\MiMFa Save.png" />
+    <Content Include="Resources\MiMFa shapV.png" />
+    <Content Include="Resources\MiMFa Yes btn.png" />
+    <Content Include="Resources\Next.png" />
+    <Content Include="Resources\Open.png" />
+    <None Include="Resources\Orange Star.png" />
+    <Content Include="Resources\pdf-icon.png" />
+    <None Include="Resources\Pink Star.png" />
+    <Content Include="Resources\Processer.gif" />
+    <None Include="Resources\Red Star.png" />
+    <Content Include="Resources\refrash.png" />
+    <Content Include="Resources\refresh %281%29.png" />
+    <Content Include="Resources\Report.png" />
+    <Content Include="Resources\reset.png" />
+    <Content Include="Resources\RightBorder.png" />
+    <Content Include="Resources\RightGo.png" />
+    <None Include="Resources\Star Green.png" />
+    <None Include="Resources\Star Ice.png" />
+    <None Include="Resources\Star Lavender.png" />
+    <None Include="Resources\Star Orange.png" />
+    <None Include="Resources\Star Pink.png" />
+    <None Include="Resources\Star Red.png" />
+    <None Include="Resources\Star Gold.png" />
+    <None Include="Resources\Star Fire.png" />
+    <None Include="Resources\Star Silver.png" />
+    <None Include="Resources\Star Yellow.png" />
+    <Content Include="Resources\Tab_Hide.png" />
+    <Content Include="Resources\Tab_Show.png" />
+    <Content Include="Resources\Tab_Show1.png" />
+    <Content Include="Resources\Tab_Show2.png" />
+    <Content Include="Resources\Tab_Show3.png" />
+    <Content Include="Resources\upBorder.png" />
+    <Content Include="Resources\us.png" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\XML Paper Specification.png" />
+    <None Include="Resources\star-white.png" />
+    <None Include="Resources\RedHole.png" />
+    <None Include="Resources\Red.png" />
+    <None Include="Resources\MiMFa Top Align.png" />
+    <None Include="Resources\MiMFa shapHYellow.png" />
+    <None Include="Resources\MiMFa shapHRed.png" />
+    <None Include="Resources\MiMFa shapHGreen.png" />
+    <None Include="Resources\MiMFa shapH.png" />
+    <None Include="Resources\MiMFa RTL Align.png" />
+    <None Include="Resources\MiMFa Refresh2.png" />
+    <None Include="Resources\MiMFa Refresh.png" />
+    <None Include="Resources\MiMFa Recovery.png" />
+    <None Include="Resources\MiMFa Person.png" />
+    <None Include="Resources\MiMFa Open.png" />
+    <None Include="Resources\MiMFa None btn.png" />
+    <None Include="Resources\MiMFa No btn.png" />
+    <None Include="Resources\MiMFa Middle Align.png" />
+    <None Include="Resources\MiMFa LTR Align.png" />
+    <None Include="Resources\MiMFa Font.png" />
+    <None Include="Resources\MiMFa Font UpLine.png" />
+    <None Include="Resources\MiMFa Font UnderLine.png" />
+    <None Include="Resources\MiMFa Font Size +.png" />
+    <None Include="Resources\MiMFa Font Size -.png" />
+    <None Include="Resources\MiMFa Font MiddleLine.png" />
+    <None Include="Resources\MiMFa Font Italic.png" />
+    <None Include="Resources\MiMFa Font Bold.png" />
+    <None Include="Resources\MiMFa Eye.png" />
+    <None Include="Resources\MiMFa Direction RTL.png" />
+    <None Include="Resources\MiMFa Directin LTR1.png" />
+    <None Include="Resources\MiMFa Directin LTR.png" />
+    <None Include="Resources\MiMFa Center Align.png" />
+    <None Include="Resources\MiMFa Bottom Align.png" />
+    <None Include="Resources\MiMFa Align.png" />
+    <None Include="Resources\MiMFa Add btn.png" />
+    <None Include="Resources\loadingImage.gif" />
+    <None Include="Resources\LinePB_Historical.gif" />
+    <None Include="Resources\LinePB_Classical.gif" />
+    <None Include="Resources\info-white.png" />
+    <None Include="Resources\HideControl - upHover1.png" />
+    <None Include="Resources\Green5.png" />
+    <None Include="Resources\forbidden-white.png" />
+    <None Include="Resources\CyclePB_Modern.gif" />
+    <None Include="Resources\CyclePB_Historical.gif" />
+    <None Include="Resources\CyclePB_Classical.gif" />
+    <None Include="Resources\comment-white.png" />
+    <None Include="Resources\columns-black .png" />
+    <None Include="Resources\CircleShaadow.png" />
+    <None Include="Resources\CircleAndShadow1.png" />
+    <None Include="Resources\CircleAndShadow.png" />
+    <Content Include="Resources\circle_arrow-down_download-128.png" />
+    <Content Include="Resources\circle_arrow-down_download-1281.png" />
+    <None Include="Resources\Circle.png" />
+    <None Include="Resources\check-white.png" />
+    <None Include="Resources\cb2507b0f9fe9d160e7bc4857d6f4b07x.jpg" />
+    <None Include="Resources\BRIGHTS PAINT_APPLICATION.png" />
+    <None Include="Resources\alert-white.png" />
+    <None Include="Resources\a4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Access.Dao">
+      <Guid>{4AC9E1DA-5BAD-4AC7-86E3-24F4CDCECA28}</Guid>
+      <VersionMajor>12</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
