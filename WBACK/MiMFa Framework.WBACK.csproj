@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D5BDBDF4-0882-493C-9C99-C8D555DF9CFB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MiMFa_Framework</RootNamespace>
+    <AssemblyName>MiMFa Framework.WBACK</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command Language.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Dialog\DIALOG.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\InApp\CALCULATOR.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\InApp\CLOCK.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Main\CommandBase.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Main\ROOT.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\ABS.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\ACOS.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\ACOT.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\ASIN.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\ATAN.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\AVERAGE.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\COS.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\COSH.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\COT.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\COTH.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\CROSS.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\E.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\FLP.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\FSP.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\I.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\INF.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\LN.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\LOG.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\MAX.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\MEAN.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\MIN.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\MOD.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\PI.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\ROUND.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\SIN.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\SINH.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\SORT.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\SQRT.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\SUM.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\TAN.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Math\TANH.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Option\CLEAN.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Option\COLOR.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Option\RESTART.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\OutApp\CMD.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\BREAK.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\CONTINUE.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\ELSE.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\EVER.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\FOR.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\FOREACH.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\FUNCTION.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\GET.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\GOTOHELL.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\IF.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\INTERNAL.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\PRIVATE.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\PROTECTED.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\PUBLIC.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\PUT.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\RETURN.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\RUN.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\SET.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\VARIABLE.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Statement\WHILE.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Type\ARRAY.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Type\DICTIONARY.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Type\LIST.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Type\MATRIX.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Value\BASE.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Value\CURRENT.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Value\FALSE.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Value\NOTHING.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Value\NULL.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Value\PREVIOUS.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Value\THAT.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Value\THIS.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Value\TRUE.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\BEEP.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\COMPARE.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\COPY.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\CRYPTOGRAPHY.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\CSHARP.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\DOWNLOAD.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\ECHO.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\GETTYPE.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\GO.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\HELP.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\HERE.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\MAIN.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\MCL.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\MOVE.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\PASTE.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\PATH.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\PRINT.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\PROCESS.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\QUIT.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\READFROM.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\REMEMBER.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\REMOTE.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\REMOTECONTROL.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\REX.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\SCORE.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\SEARCH.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\TCP.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\TRANSLATE.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\UPLOAD.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Command\Work\WRITETO.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Command Language\Sub\Get.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Report Language\Options\AttributeTag.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Report Language\Options\AutoTag.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Report Language\Options\DepletableTag.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Report Language\Options\Display.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Report Language\Options\HighlightTag.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Report Language\Options\SimplyTag.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Report Language\Report Language.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Report Language\Sub\Address.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Report Language\Sub\MRLTools.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\MiMFa Report Language\Sub\Pickup\XMPPickup.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\NaturalLanguage\Natural Language.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\NaturalLanguage\Response\Main\MainResponse.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\NaturalLanguage\Response\Main\ResponseBase.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\NaturalLanguage\Response\Sign\COMMANDSPLITTER.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\NaturalLanguage\Response\Sign\COMMENT.cs" />
+    <Compile Include="Exclusive\ProgramingTechnology\NaturalLanguage\Response\Work\ECHO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\MiMFa Framework.csproj">
+      <Project>{adc72cd2-885e-442a-983e-0ba87b7234ef}</Project>
+      <Name>MiMFa Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
